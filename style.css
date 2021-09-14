@@ -23,3 +23,13 @@
     background: rgb(29, 155, 240);
     opacity: 0.5;
 }
+
+#tweet-input{
+    /* border: none; */
+    padding: 1rem;
+    font-size: 1.25rem;;
+}
+
+#tweet-input::placeholder{
+    
+}
