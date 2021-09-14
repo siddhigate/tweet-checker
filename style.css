@@ -6,30 +6,174 @@
     font-family: 'Poppins', sans-serif;;
 }
 
+:root {
+
+    --primary-color: rgb(29, 155, 240);
+    --shadow-color: rgba(146,161,176,.15);
+    --light-gray: #F9FAFB;
+    --gray-100: #F3F4F6;
+    --gray-200: #E5E7EB;
+    --dark-gray: #4B5563;
+}
+
+body{
+    background: var(--light-gray);
+}
+
 .btn-tweet{
 
-    padding: 0.75rem 3rem;
-    background: rgb(29, 155, 240);
+    padding: 0.65rem 2rem;
+    background: var(--primary-color);
     border: none;
     color: white;
     font-weight: 500;
     border-radius: 1.5rem;
     font-size: 1rem;   
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
 }
 
 .btn-tweet:disabled,
 .btn-tweet[disabled]{
-    background: rgb(29, 155, 240);
+    background: var(--primary-color);
     opacity: 0.5;
 }
 
 #tweet-input{
-    /* border: none; */
+    border: none;
     padding: 1rem;
     font-size: 1.25rem;;
+
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
 }
 
-#tweet-input::placeholder{
+.container {
+    
+    
+    background: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 1px 18px var(--shadow-color);
+    
+    min-height:40vh;
+
+    width:40%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+
+.row-cross{
+    /* height: 2rem; */
+    border-bottom: 1px solid var(--gray-100);
+    padding: 0.5rem 1.5rem;
+    font-size:1.5rem;
+    color: var(--dark-gray);
+}
+
+.row-main{
+    display: flex;
+    padding: 1rem;
+    
+}
+
+.col-profile{
+    margin-right: 1rem;
+}
+
+.col-tweet{
+    width: 80%;
+}
+
+.img-profile{
+    width:4rem;
+    border-radius: 2rem;
+}
+
+
+.row-access, .row-buttons{
+    padding: 0 1rem;    
+}
+
+.row-access{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.03rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.reply-condn{
+    margin-left: 0.5rem;
+}
+
+.img-earth{
+    width: 1rem;
+    height: 1rem;
+}
+
+/* buttons row */
+.row-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem; 
+}
+
+.col-tweet-btn{
+    display: flex;
+    align-items: center;
+}
+
+.char-count{
+    margin-right: 2rem;
+    border: 1px solid var(--primary-color);
+    width: 2.2rem;
+    height: 2.2rem;
+    text-align: center;
+    border-radius: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px){
+
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px){
+
+    .container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px){
+
+    .container{
+        width: 90%;
+    }
+
+    .col-profile{
+        margin-right: 0.25rem;
+    }
+
+    .img-profile{
+        width:3rem;
+        border-radius: 1.5rem;
+        margin-top: 0.25rem;
+    }
     
 }
