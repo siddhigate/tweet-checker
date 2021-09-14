@@ -70,6 +70,7 @@ body{
     padding: 0.5rem 1.5rem;
     font-size:1.5rem;
     color: var(--dark-gray);
+    cursor: pointer;
 }
 
 .row-main{
@@ -139,6 +140,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.screen-centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index : -1;
+}
+
+#tweet{  
+    padding: 1rem 4rem;
+    border-radius: 1.75rem;
+    font-size: 1rem;   
+    letter-spacing: 0.03rem;
+    cursor: pointer;
 }
 
 @media (max-width: 1200px){

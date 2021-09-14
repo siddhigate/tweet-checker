@@ -9,6 +9,11 @@
 </head>
 <body>
 
+
+    <div class="screen-centered">
+        <button id="tweet" class="btn-tweet">Tweet</button>
+    </div>
+
     <div class="container">
 
         <div class="row-cross">
@@ -17,10 +22,10 @@
 
         <div class="row-main">
             <div class="col-profile">
-                <img class="img-profile" src="./pf.jpg" alt="">
+                <a href="https://twitter.com/SiddhiGate" target="_blank"> <img class="img-profile" src="./pf.jpg" alt=""></a>
             </div>
             <div class="col-tweet">
-                <textarea name="" id="tweet-input" cols="24" rows="3" maxlength="30" placeholder="What's happening?"></textarea>
+                <textarea name="" id="tweet-input"  maxlength="30" placeholder="What's happening?"></textarea>
 
                 <div class="row-access">
                     <img class="img-earth" src="./earth.png" alt="">
@@ -36,7 +41,7 @@
                     </div>
                     <div class="col-tweet-btn">
                         <div class="char-count">30</div>
-                        <button class="btn-tweet" disabled>Tweet</button>
+                        <button id="tweet-btn" class="btn-tweet" disabled>Tweet</button>
                     </div>
                     
                 </div>

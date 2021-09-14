@@ -1,5 +1,9 @@
+const crossBtn = document.querySelector(".row-cross");
+const tweetMainBtn = document.querySelector("#tweet");
+const cardDiv = document.querySelector(".container");
+
 const tweetInput = document.querySelector("#tweet-input");
-const tweetBtn = document.querySelector(".btn-tweet");
+const tweetBtn = document.querySelector("#tweet-btn");
 const charCountDiv = document.querySelector(".char-count");
 
 const maxTweetLength = tweetInput.attributes.maxLength.value;
@@ -34,5 +38,19 @@ function renderCharCountDiv(len){
         charCountDiv.style.border = "1px solid #EF4444";
     }
 }
+
+
+crossBtn.addEventListener("click", () => {
+
+    cardDiv.style.display = "none";
+    tweetMainBtn.style.display = "block";
+})
+
+tweetMainBtn.addEventListener("click", () => {
+
+    console.log("tweet")
+    cardDiv.style.display = "block";
+    tweetMainBtn.style.display = "none";
+})
 
 tweetInput.focus();
