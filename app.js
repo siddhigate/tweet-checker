@@ -42,6 +42,7 @@ function renderCharCountDiv(len){
 
 crossBtn.addEventListener("click", () => {
 
+    tweetInput.value ="";
     cardDiv.style.display = "none";
     tweetMainBtn.style.display = "block";
 })
