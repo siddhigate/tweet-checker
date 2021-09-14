@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.btn-tweet{
+
+    padding: 0.75rem 3rem;
+    background: rgb(29, 155, 240);
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 1.5rem;
+    font-size: 1rem;   
+    letter-spacing: 0.05rem;
+}
+
+.btn-tweet:disabled,
+.btn-tweet[disabled]{
+    background: rgb(29, 155, 240);
+    opacity: 0.5;
+}
