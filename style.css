@@ -47,6 +47,8 @@ body{
     background-color: transparent;
     resize: none;
     outline: none;
+
+    width: 100%;
 }
 
 .container {
@@ -182,7 +184,7 @@ body{
 @media (max-width: 700px){
 
     .container{
-        width: 90%;
+        width: 95%;
     }
 
     .col-profile{
