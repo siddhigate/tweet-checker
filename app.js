@@ -10,6 +10,8 @@ const maxTweetLength = tweetInput.attributes.maxLength.value;
 
 tweetInput.addEventListener("keyup", () => {
 
+    checkMaxLength();
+
     remainingChars = Number(maxTweetLength) - tweetInput.value.length;
     renderCharCountDiv(remainingChars)
 
@@ -33,7 +35,7 @@ function renderCharCountDiv(len){
         charCountDiv.style.color ="#F59E0B";
         charCountDiv.style.border = "1px solid #F59E0B";
     }
-    else {
+    else if(len >= 0) {
         charCountDiv.style.color ="#EF4444";
         charCountDiv.style.border = "1px solid #EF4444";
     }
@@ -53,6 +55,13 @@ tweetMainBtn.addEventListener("click", () => {
     cardDiv.style.display = "block";
     tweetMainBtn.style.display = "none";
 })
+
+
+function checkMaxLength(){
+    if(tweetInput.value.length > maxTweetLength) {
+        tweetInput.value = tweetInput.value.substring(0, maxTweetLength);
+    }
+}
 
 function resetTweetDiv(){
     
