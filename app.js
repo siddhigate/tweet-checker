@@ -42,7 +42,7 @@ function renderCharCountDiv(len){
 
 crossBtn.addEventListener("click", () => {
 
-    tweetInput.value ="";
+    resetTweetDiv();
     cardDiv.style.display = "none";
     tweetMainBtn.style.display = "block";
 })
@@ -53,5 +53,14 @@ tweetMainBtn.addEventListener("click", () => {
     cardDiv.style.display = "block";
     tweetMainBtn.style.display = "none";
 })
+
+function resetTweetDiv(){
+    
+    tweetInput.value ="";
+    charCountDiv.innerText = maxTweetLength;
+    charCountDiv.style.color ="rgb(29, 155, 240)";
+    charCountDiv.style.border = "1px solid rgb(29, 155, 240)";
+}
+
 
 tweetInput.focus();
