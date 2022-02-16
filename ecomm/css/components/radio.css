@@ -1,0 +1,56 @@
+/* container */
+.radio-label {
+  display: block;
+  margin-bottom: 4px;
+  position: relative; /* to contain absolute elements */
+  padding-left: 30px; /* free space for custom radio button */
+  cursor: pointer;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+}
+/* hide default radio button  */
+.radio-label input[type="radio"] {
+  position: absolute; /* prevent taking any space */
+  /* cross-browser hidingg */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* custom radio button */
+.radio-label span {
+  position: absolute;
+  /* position to the free space in <label> */
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: 0.3s background-color; /* slight transition */
+}
+/* the check icon */
+.radio-label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* middle */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.radio-label:hover span {
+  background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+.radio-label input:checked ~ span {
+  background-color: #ff3f6c;
+}
+.radio-label input:checked ~ span:after {
+  display: block;
+}

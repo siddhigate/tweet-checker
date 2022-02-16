@@ -1,0 +1,55 @@
+/* container */
+.checkbox-label {
+  position: relative;
+  padding-left: 1.5rem; 
+  margin-bottom: 0.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* hide default checkbox  */
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  /* cross-browser hidingg */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* custom checkbox */
+.checkbox-label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  transition: 0.3s background-color;
+}
+
+/* the check icon */
+.checkbox-label span:after {
+  content: "";
+  position: absolute;
+  display: none;
+
+  /* check icon */
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label:hover span {
+  background-color: #ccc;
+}
+
+.checkbox-label input:checked ~ span {
+  background-color: var(--clr-pink);
+}
+.checkbox-label input:checked ~ span:after {
+  display: block;
+}

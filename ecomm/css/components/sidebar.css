@@ -1,0 +1,39 @@
+.sidebar-filters {
+    padding: 0 1rem 0 2rem;
+    border-right: 1px solid var(--clr-secondary-light);
+    height: fit-content;
+}
+
+.sidebar-heading {
+    border-bottom: 1px solid var(--clr-secondary-light);
+    margin: 0.5rem 0;
+}
+
+.txt-clear {
+    color: var(--clr-pink);
+    font-size: 0.9rem;   
+    cursor: pointer;
+}
+
+.txt-clear:hover,
+.txt-clear:focus {
+    font-weight: 600;
+}
+
+.filters-section {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--clr-secondary-light);
+}
+
+.filters-subheading {
+    font-size: 0.9rem;
+    color: var(--clr-secondary-dark);
+    letter-spacing: 0.1rem;
+}
+
+.filters-options {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0;
+}

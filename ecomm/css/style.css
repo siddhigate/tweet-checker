@@ -1,0 +1,15 @@
+@import 'https://upsleek-ui.vercel.app/css/style.css';
+
+@import './base/root.css';
+
+@import './pages/authentication.css';
+@import './pages/cart.css';
+@import './pages/landing.css';
+@import './pages/productlist.css';
+@import './pages/wishlist.css';
+
+@import './components/checkbox.css';
+@import './components/radio.css';
+@import './components/nav.css';
+@import './components/sidebar.css';
+@import './components/search.css';

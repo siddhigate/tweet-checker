@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-info-wrapper">
+            <div class="logo">
+                <!-- <img src="./assets/logo.png" alt="" class="logo-img"> -->
+                <span class="logo-title">fashionly</span>
+            </div>
+
+            <div class="flex flex-justify-between flex-items-center header-nav">
+                <div class="input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="search" name="" id="">
+                </div>
+            <nav>
+                <ul class="navigation list-style-none list-inline">
+
+                    <li class="search-icon">
+                        <a href="./cart.html" class="link">
+                            <div class="badge-container">
+                                <i class="fas fa-search icon"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cart.html" class="link">
+                            <div class="badge-container">
+                                <i class="fas fa-shopping-cart icon"></i>
+                                <span class="badge badge-status badge-notification">3</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wishlist.html" class="link">
+                            <div class="badge-container">
+                                <i class="fas fa-heart icon"></i>
+                                <!-- <span class="badge badge-status badge-notification">3</span> -->
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wishlist.html" class="link">
+                            <div class="badge-container">
+                                <i class="fa-solid fa-user icon"></i>
+                                <!-- <span class="badge badge-status badge-notification">3</span> -->
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="sidebar-toggles">
+            <div class="filters flex flex-items-center sidebar-filters-toggle"  aria-controls="sidebar-filters">
+                <i class="fa-solid fa-filter"></i>
+                <span class="txt-uppercase">Filters</span>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="products flex flex-justify-between gap-sm">
+
+        <div id="sidebar-filters" class="sidebar-filters" data-visible="false">
+
+            <div class="sidebar-heading flex flex-justify-between flex-items-center">
+                <div class="filters flex flex-items-center">
+                    <i class="fa-solid fa-filter"></i>
+                    <span class="txt-uppercase">Filters</span>
+                </div>
+
+                <div class="txt-uppercase txt-clear">
+                    Clear all
+                </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Categories</div>
+
+                <div class="filters-options">
+                <label class="checkbox-label"> Dresses
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Tops
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Tshirts
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Jeans
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Sweatshirts
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+            </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Brand</div>
+
+                <div class="filters-options">
+                <label class="checkbox-label"> Prada
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Roadster
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Adidas
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Nike
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+                <label class="checkbox-label"> Raymond
+                    <input type="checkbox" />
+                    <span></span>
+                </label>
+            </div>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-subheading txt-uppercase">Prices</div>
+
+                <div class="filters-options">
+                    <label class="radio-label">Rs. 5000 and above
+                        <input type="radio" name="fruit" checked />
+                        <span></span>
+                    </label>
+                    <label class="radio-label">Rs. 3000 and above
+                        <input type="radio" name="fruit" />
+                        <span></span>
+                    </label>
+                    <label class="radio-label">Rs. 1000 and above
+                        <input type="radio" name="fruit" />
+                        <span></span>
+                    </label>
+                    <label class="radio-label">Rs. 500 and above
+                        <input type="radio" name="fruit" checked />
+                        <span></span>
+                    </label>
+                    <label class="radio-label">Rs. 500 and below
+                        <input type="radio" name="fruit" />
+                        <span></span>
+                    </label>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="product-listing grid">
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+            <div class="card card-shadow mb-lg">
+                <img src="../assets/images/card.jpg" alt="" class="img-responsive card-image">
+                <div class="card-info">
+                    <p class="txt-dark-gray fw-semibold fs-md">Winter wear</p>
+                    <p class="txt-gray fw-semibold">Yellow and white dress</p>
+                    <p>
+                        <span class="fw-bolder"> Rs. 999 </span>
+                        <span class="txt-strike-through txt-secondary fs-sm mx-sm">Rs.2000</span>
+                        <span class="txt-green">50% off</span>
+                    </p>
+                    <p class="fs-sm">Free delivery</p>
+                </div>
+                <i class="fa-solid fa-heart icon"></i>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+</body>
+
+</html>
