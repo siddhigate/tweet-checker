@@ -13,11 +13,12 @@
     color: var(--clr-pink);
     font-size: 0.9rem;   
     cursor: pointer;
+    font-weight: 500;
 }
 
 .txt-clear:hover,
 .txt-clear:focus {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .filters-section {
