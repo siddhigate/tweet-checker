@@ -128,6 +128,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .deals-images img{
+
+        height: 40vh;
+    }
+
+    .deal-info {
+        font-size: 1.5rem;
+    }
     .section-deals h2 {
         font-size: 1.5rem;
         letter-spacing: 0.5rem;
