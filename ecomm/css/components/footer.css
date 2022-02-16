@@ -1,6 +1,6 @@
 .footer {
     min-height: 70vh;
-    background: #f5f1f1;
+    background: #f9fafb;
     color: var(--clr-secondary);
     display: flex;
     justify-content: space-between;
