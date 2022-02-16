@@ -39,8 +39,17 @@
     }
 
     .banner-img .img {
-        height: 50vh;
+        height: 30vh;
     }
+
+    .banner-info .heading{
+        font-size: 2.5rem;
+    }
+
+    .banner-info .subheading{
+        font-size: 1.75rem;
+    }
+    
 
     .banner-info {
         align-items: center;
