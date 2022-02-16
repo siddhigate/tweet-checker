@@ -1,0 +1,48 @@
+.banner {
+    display: flex;
+}
+
+.banner-img {
+    width: 70%;
+}
+
+.banner-img .img {
+    height: 70vh; 
+    width: 100%; 
+    object-fit: cover; 
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem;
+    font-style: italic;
+}
+
+.banner-info .btn {
+    background: var(--clr-pink); 
+    margin:0; 
+    padding: 0.75rem 4rem;
+} 
+
+@media screen and (max-width: 700px) {
+    
+    .banner {
+        flex-direction: column;
+    } 
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-img .img {
+        height: 50vh;
+    }
+
+    .banner-info {
+        align-items: center;
+    }
+}
