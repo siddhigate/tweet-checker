@@ -37,3 +37,7 @@
     flex-direction: column;
     margin: 0.7rem 0;
 }
+
+.filters-options i {
+    font-size: 0.5rem;
+}
