@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 700px) {
     
-    body {
+    .bg-aliceblue {
         background-color: aliceblue;
     }
 
