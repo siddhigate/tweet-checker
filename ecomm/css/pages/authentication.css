@@ -1,0 +1,29 @@
+.main-login {
+    background: white;
+    box-shadow: 0px 3px 15px -5px #d1d5db;
+    padding: 0 2rem 2rem 2rem;
+    
+}
+
+.main-login .h1 {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.main-login .form-control-wrapper {
+    margin: 1rem 0;
+}
+
+.main-login img {
+    height: 30vh;
+    display: block;
+    margin: auto;
+}
+
+.main-login .btn{
+    width: 100%;
+}
+
+.main-login .link {
+    text-decoration: none;
+}
