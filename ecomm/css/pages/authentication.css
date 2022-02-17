@@ -1,7 +1,7 @@
 .main-login {
     background: white;
     box-shadow: 0px 3px 15px -5px #d1d5db;
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     margin-top: 2rem;
 }
 
@@ -15,9 +15,9 @@
 }
 
 .main-login img {
-    height: 30vh;
+    height: 15vh;
     display: block;
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .main-login .btn{
@@ -27,6 +27,38 @@
 .main-login .link {
     text-decoration: none;
 }
+
+.card-logout {
+    max-width: 40rem;
+    background-color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 3px 18px -5px #d1d5db;
+
+}
+
+.card-logout i {
+    font-size: 3rem;
+    color: var(--clr-primary);
+}
+
+.card-logout .logout-msg {
+    margin: 2rem 1rem 1rem 1rem;
+    font-size: 1.25rem;
+}
+
+.card-logout .link {
+    text-decoration: none;
+    border-bottom: 1px solid var(--clr-primary);
+}
+
+.card-logout .link:hover,
+.card-logout .link:hover {
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 600px) {
 
