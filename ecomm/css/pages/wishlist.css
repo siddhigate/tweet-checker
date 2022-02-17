@@ -8,7 +8,10 @@
 }
 
 .wishlist-products {
+    padding: 0.5rem;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
 
 .wishlist-products .card-cta {
