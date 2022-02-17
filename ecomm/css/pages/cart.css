@@ -20,10 +20,10 @@
 .cart-products .icon {
     font-size: 1.25rem;
 }
-/* 
-.card .card-image{
+
+.cart-container .card-image{
     height: auto;
-} */
+}
 
 .cart-details {
     width: 40%;
