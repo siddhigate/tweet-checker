@@ -45,5 +45,15 @@
     .wishlist-products {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .wishlist-products .btn {
+        font-size: 0.9rem;
+        padding: 0.75rem 0;
+    }
+    
+    .card-cta i {
+        margin-right: 0.75rem;
+    }
+    
  
 }
