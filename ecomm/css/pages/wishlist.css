@@ -1,5 +1,6 @@
 .main-wishlist {
     max-width: 1000px;
+    padding: 0 1rem;
     margin: 1rem auto;
 }
 
@@ -8,7 +9,6 @@
 }
 
 .wishlist-products {
-    padding: 0.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
@@ -58,5 +58,9 @@
         margin-right: 0.75rem;
     }
     
+    .txt-green {
+        display: block;
+        margin-top:0.25rem;
+    }
  
 }
